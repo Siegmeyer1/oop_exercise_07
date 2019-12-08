@@ -1,9 +1,4 @@
 #include <iostream>
-#include "figures/octagon.h"
-#include "figures/square.h"
-#include "figures/triangle.h"
-#include "doc_functions/document.h"
-#include "command.h"
 #include "editor.h"
 
 bool quit (Editor& editor) {
@@ -172,12 +167,15 @@ int main() {
     while (cmd != "quit") {
         std::cin >> cmd;
         if (cmd == "quit") {
-           if (quit(editor)) return 0;
+           if (quit(editor))
+           {
+               return 0;
+           }
         } else if (cmd == "man") {
             man();
         } else if (cmd == "create") {
             create(editor);
-        } else if (cmd == "save ") {
+        } else if (cmd == "save") {
             save(editor);
         } else if (cmd == "load") {
             load(editor);

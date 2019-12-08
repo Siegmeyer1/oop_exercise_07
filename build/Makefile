@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named OOP_lab7
+# Target rules for targets named oop_exercise_07
 
 # Build rule for target.
-OOP_lab7: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OOP_lab7
-.PHONY : OOP_lab7
+oop_exercise_07: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 oop_exercise_07
+.PHONY : oop_exercise_07
 
 # fast build rule for target.
-OOP_lab7/fast:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/build
-.PHONY : OOP_lab7/fast
+oop_exercise_07/fast:
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/build
+.PHONY : oop_exercise_07/fast
 
 doc_functions/document.o: doc_functions/document.cpp.o
 
@@ -129,7 +129,7 @@ doc_functions/document.o: doc_functions/document.cpp.o
 
 # target to build an object file
 doc_functions/document.cpp.o:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/doc_functions/document.cpp.o
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/doc_functions/document.cpp.o
 .PHONY : doc_functions/document.cpp.o
 
 doc_functions/document.i: doc_functions/document.cpp.i
@@ -138,7 +138,7 @@ doc_functions/document.i: doc_functions/document.cpp.i
 
 # target to preprocess a source file
 doc_functions/document.cpp.i:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/doc_functions/document.cpp.i
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/doc_functions/document.cpp.i
 .PHONY : doc_functions/document.cpp.i
 
 doc_functions/document.s: doc_functions/document.cpp.s
@@ -147,7 +147,7 @@ doc_functions/document.s: doc_functions/document.cpp.s
 
 # target to generate assembly for a file
 doc_functions/document.cpp.s:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/doc_functions/document.cpp.s
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/doc_functions/document.cpp.s
 .PHONY : doc_functions/document.cpp.s
 
 figures/dot.o: figures/dot.cpp.o
@@ -156,7 +156,7 @@ figures/dot.o: figures/dot.cpp.o
 
 # target to build an object file
 figures/dot.cpp.o:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/figures/dot.cpp.o
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/figures/dot.cpp.o
 .PHONY : figures/dot.cpp.o
 
 figures/dot.i: figures/dot.cpp.i
@@ -165,7 +165,7 @@ figures/dot.i: figures/dot.cpp.i
 
 # target to preprocess a source file
 figures/dot.cpp.i:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/figures/dot.cpp.i
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/figures/dot.cpp.i
 .PHONY : figures/dot.cpp.i
 
 figures/dot.s: figures/dot.cpp.s
@@ -174,7 +174,7 @@ figures/dot.s: figures/dot.cpp.s
 
 # target to generate assembly for a file
 figures/dot.cpp.s:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/figures/dot.cpp.s
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/figures/dot.cpp.s
 .PHONY : figures/dot.cpp.s
 
 figures/octagon.o: figures/octagon.cpp.o
@@ -183,7 +183,7 @@ figures/octagon.o: figures/octagon.cpp.o
 
 # target to build an object file
 figures/octagon.cpp.o:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/figures/octagon.cpp.o
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/figures/octagon.cpp.o
 .PHONY : figures/octagon.cpp.o
 
 figures/octagon.i: figures/octagon.cpp.i
@@ -192,7 +192,7 @@ figures/octagon.i: figures/octagon.cpp.i
 
 # target to preprocess a source file
 figures/octagon.cpp.i:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/figures/octagon.cpp.i
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/figures/octagon.cpp.i
 .PHONY : figures/octagon.cpp.i
 
 figures/octagon.s: figures/octagon.cpp.s
@@ -201,7 +201,7 @@ figures/octagon.s: figures/octagon.cpp.s
 
 # target to generate assembly for a file
 figures/octagon.cpp.s:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/figures/octagon.cpp.s
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/figures/octagon.cpp.s
 .PHONY : figures/octagon.cpp.s
 
 figures/square.o: figures/square.cpp.o
@@ -210,7 +210,7 @@ figures/square.o: figures/square.cpp.o
 
 # target to build an object file
 figures/square.cpp.o:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/figures/square.cpp.o
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/figures/square.cpp.o
 .PHONY : figures/square.cpp.o
 
 figures/square.i: figures/square.cpp.i
@@ -219,7 +219,7 @@ figures/square.i: figures/square.cpp.i
 
 # target to preprocess a source file
 figures/square.cpp.i:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/figures/square.cpp.i
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/figures/square.cpp.i
 .PHONY : figures/square.cpp.i
 
 figures/square.s: figures/square.cpp.s
@@ -228,7 +228,7 @@ figures/square.s: figures/square.cpp.s
 
 # target to generate assembly for a file
 figures/square.cpp.s:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/figures/square.cpp.s
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/figures/square.cpp.s
 .PHONY : figures/square.cpp.s
 
 figures/triangle.o: figures/triangle.cpp.o
@@ -237,7 +237,7 @@ figures/triangle.o: figures/triangle.cpp.o
 
 # target to build an object file
 figures/triangle.cpp.o:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/figures/triangle.cpp.o
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/figures/triangle.cpp.o
 .PHONY : figures/triangle.cpp.o
 
 figures/triangle.i: figures/triangle.cpp.i
@@ -246,7 +246,7 @@ figures/triangle.i: figures/triangle.cpp.i
 
 # target to preprocess a source file
 figures/triangle.cpp.i:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/figures/triangle.cpp.i
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/figures/triangle.cpp.i
 .PHONY : figures/triangle.cpp.i
 
 figures/triangle.s: figures/triangle.cpp.s
@@ -255,7 +255,7 @@ figures/triangle.s: figures/triangle.cpp.s
 
 # target to generate assembly for a file
 figures/triangle.cpp.s:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/figures/triangle.cpp.s
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/figures/triangle.cpp.s
 .PHONY : figures/triangle.cpp.s
 
 main.o: main.cpp.o
@@ -264,7 +264,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -273,7 +273,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -282,7 +282,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/OOP_lab7.dir/build.make CMakeFiles/OOP_lab7.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/oop_exercise_07.dir/build.make CMakeFiles/oop_exercise_07.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -292,7 +292,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... OOP_lab7"
+	@echo "... oop_exercise_07"
 	@echo "... edit_cache"
 	@echo "... doc_functions/document.o"
 	@echo "... doc_functions/document.i"

@@ -11,7 +11,7 @@ public:
     virtual void Execute() = 0;
     virtual void Abort() = 0;
     void SetDocument(std::shared_ptr<doc_class::Document> doc) {
-        Doc_ = std::move(doc); //МУВ ДЛЯ ИЗБЕГАНИЯ ЛИШНЕГО КОПИРОВАНИЯ
+        Doc_ = std::move(doc);
     }
 protected:
     std::shared_ptr<doc_class::Document> Doc_;

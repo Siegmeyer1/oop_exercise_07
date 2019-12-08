@@ -21,8 +21,6 @@ namespace doc_class {
 
         ~Document() = default;
 
-        void Rename(const std::string &new_name);
-
         void Save(const std::string &filename) const;
 
         void Load(const std::string &filename);

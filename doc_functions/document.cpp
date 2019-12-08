@@ -6,10 +6,6 @@ doc_class::Document::Document(): Id_(1), Name_(""), Buf_(0), trg_fact(), sqr_fac
 
 doc_class::Document::Document(std::string name): Id_(1), Name_(std::move(name)), Buf_(0), trg_fact(), sqr_fact(), oct_fact() {}
 
-void doc_class::Document::Rename(const std::string &new_name) {
-    Name_ = new_name;
-}
-
 void doc_class::Document::Save(const std::string &filename) const {
     Save_impl(filename);
 }
@@ -21,7 +17,6 @@ void doc_class::Document::Load(const std::string &filename) {
 void doc_class::Document::Print() const {
     std::for_each(Buf_.begin(), Buf_.end(), [&](const std::shared_ptr<figures::Figure>& shape) {
         shape->PrintOut(std::cout);
-        //std::cout << *shape << '\n';
     });
 }
 
@@ -58,13 +53,13 @@ void doc_class::Document::Add_figure(figure_t type, std::istream& is) {
 }
 
 uint32_t doc_class::Document::Get_position(uint32_t id) {
-    auto it = std::find_if(Buf_.begin(), Buf_.end(), [id](std::shared_ptr<figures::Figure> shape) -> bool {
+    auto it = std::find_if(Buf_.begin(), Buf_.end(), [id](std::shared_ptr<figures::Figure>& shape) -> bool {
         return id == shape->Id();
     });
     return std::distance(Buf_.begin(), it);
 }
 
-std::shared_ptr<figures::Figure> doc_class::Document::Get_figure(uint32_t id)  { //ПЕРЕДАЧА ПО ССЫЛКЕ
+std::shared_ptr<figures::Figure> doc_class::Document::Get_figure(uint32_t id)  {
     auto it = std::find_if(Buf_.begin(), Buf_.end(), [id](std::shared_ptr<figures::Figure>& shape) -> bool {
         return id == shape->Id();
     });
