@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/OOP_lab7.dir/main.cpp.o CMakeFiles/OOP_lab7.dir/figures/dot.cpp.o CMakeFiles/OOP_lab7.dir/figures/octagon.cpp.o CMakeFiles/OOP_lab7.dir/figures/square.cpp.o CMakeFiles/OOP_lab7.dir/figures/triangle.cpp.o CMakeFiles/OOP_lab7.dir/doc_functions/document.cpp.o  -o OOP_lab7 

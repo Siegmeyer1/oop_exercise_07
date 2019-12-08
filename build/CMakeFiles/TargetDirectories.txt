@@ -1,0 +1,3 @@
+/home/anri/Documents/Github_repositories/OOP_lab7/build/CMakeFiles/rebuild_cache.dir
+/home/anri/Documents/Github_repositories/OOP_lab7/build/CMakeFiles/OOP_lab7.dir
+/home/anri/Documents/Github_repositories/OOP_lab7/build/CMakeFiles/edit_cache.dir
