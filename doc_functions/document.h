@@ -13,6 +13,20 @@ const uint32_t FORMAT_CODE = 06032001;
 
 namespace doc_class {
 
+    class Factory {
+    public:
+        std::map<figure_t, std::shared_ptr<FactoryInterface>> plants;
+        std::map<std::string, figure_t> figure_names;
+        Factory() {
+            plants.emplace(TRIANGLE, std::make_shared<Triangle_factory>());
+            plants.emplace(SQUARE, std::make_shared<Square_factory>());
+            plants.emplace(OCTAGON, std::make_shared<Octagon_factory>());
+            figure_names.emplace("triangle", TRIANGLE);
+            figure_names.emplace("square", SQUARE);
+            figure_names.emplace("octagon", OCTAGON);
+        }
+    };
+
     class Document {
     public:
         Document();
@@ -39,17 +53,20 @@ namespace doc_class {
 
         void Insert_figure(uint32_t pos, std::shared_ptr<figures::Figure>& figure);
 
+        Factory factory;
+
     private:
         uint32_t Id_;
         std::string Name_;
         std::list<std::shared_ptr<figures::Figure>> Buf_;
-        Triangle_factory trg_fact;
+        /*Triangle_factory trg_fact;
         Square_factory sqr_fact;
-        Octagon_factory oct_fact;
+        Octagon_factory oct_fact;*/
 
         void Save_impl(const std::string& filename) const;
         void Load_impl(const std::string& filename);
         };
+
 }
 
 #endif //OOP_LAB7_DOCUMENT_H

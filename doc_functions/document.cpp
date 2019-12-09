@@ -2,9 +2,9 @@
 #include <cstdint>
 #include "document.h"
 
-doc_class::Document::Document(): Id_(1), Name_(""), Buf_(0), trg_fact(), sqr_fact(), oct_fact() {}
+doc_class::Document::Document(): Id_(1), Name_(""), Buf_(0), factory() {}
 
-doc_class::Document::Document(std::string name): Id_(1), Name_(std::move(name)), Buf_(0), trg_fact(), sqr_fact(), oct_fact() {}
+doc_class::Document::Document(std::string name): Id_(1), Name_(std::move(name)), Buf_(0), factory() {}
 
 void doc_class::Document::Save(const std::string &filename) const {
     Save_impl(filename);
@@ -39,7 +39,7 @@ void doc_class::Document::Remove_last_figure() {
 }
 
 void doc_class::Document::Add_figure(figure_t type, std::istream& is) {
-    switch (type) {
+    /*switch (type) {
         case TRIANGLE:
             Buf_.push_back(trg_fact.Figure_create(Id_++, std::cin));
             break;
@@ -48,8 +48,8 @@ void doc_class::Document::Add_figure(figure_t type, std::istream& is) {
             break;
         case OCTAGON:
             Buf_.push_back(oct_fact.Figure_create(Id_++, std::cin));
-            break;
-    }
+            break;*/
+    Buf_.push_back(factory.plants[type]->Figure_create(Id_++, is));
 }
 
 uint32_t doc_class::Document::Get_position(uint32_t id) {
@@ -110,7 +110,7 @@ void doc_class::Document::Load_impl(const std::string &filename) {
         is.read((char*)&type, sizeof(type));
         if (is.eof())
             break;
-        switch (type) {
+        /*switch (type) {
             case TRIANGLE:
                 Buf_.push_back(trg_fact.Figure_create());
                 break;
@@ -120,7 +120,8 @@ void doc_class::Document::Load_impl(const std::string &filename) {
             case OCTAGON:
                 Buf_.push_back(oct_fact.Figure_create());
                 break;
-        }
+        }*/
+        Buf_.push_back(factory.plants[type]->Figure_create());
         Buf_.back()->Load(is);
     }
     Id_ = Buf_.size();

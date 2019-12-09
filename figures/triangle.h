@@ -24,7 +24,7 @@ namespace figures {
 
 } //namespace figures
 
-class Triangle_factory : public Factory {
+class Triangle_factory : public FactoryInterface {
 public:
     std::shared_ptr<figures::Figure> Figure_create() const override;
     std::shared_ptr<figures::Figure> Figure_create(uint32_t id, std::istream& is) const override;

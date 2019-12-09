@@ -12,6 +12,8 @@ public:
 
     void Create_document(const std::string& name) {
         Doc_ = std::make_shared<doc_class::Document>(name);
+        while(!History_.empty())
+            History_.pop();
     }
 
     void Insert_figure(figure_t type, std::istream& is) {
@@ -35,6 +37,8 @@ public:
     void Load_document(const std::string& filename) {
         Doc_ = std::make_shared<doc_class::Document>("NoName");
         Doc_->Load(filename);
+        while(!History_.empty())
+            History_.pop();
     }
 
     void Undo() {
@@ -56,9 +60,12 @@ public:
 
     ~Editor() = default;
 
-private:
+public:
     std::shared_ptr<doc_class::Document> Doc_;
+private:
     std::stack<std::shared_ptr<Command>> History_;
 };
+
+
 
 #endif //OOP_LAB7_EDITOR_H

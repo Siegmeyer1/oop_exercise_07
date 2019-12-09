@@ -3,6 +3,7 @@
 
 #include <memory>
 #include <fstream>
+#include <map>
 #include "dot.h"
 
 enum figure_t {
@@ -26,10 +27,11 @@ namespace figures {
 
 } //namespace figures
 
-class Factory {
+class FactoryInterface {
 public:
     virtual std::shared_ptr<figures::Figure> Figure_create() const = 0;
     virtual std::shared_ptr<figures::Figure> Figure_create(uint32_t id, std::istream& is) const = 0;
 };
+
 
 #endif //OOP_LAB7_FIGURE_H

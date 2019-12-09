@@ -120,7 +120,7 @@ bool save(Editor& editor) {
 }
 
 void add (Editor& editor) {
-    int type;
+    /*int type;
     std::cout << "Enter type of figure (1 for triangle, 2 for square, 3 - for octagon): ";
     std::cin >> type;
     switch(type) {
@@ -139,7 +139,10 @@ void add (Editor& editor) {
         default:
             std::cout << "Please, enter 1, 2 or 3 to choose figure\n";
             return;
-    }
+    }*/
+    std::string name;
+    std::cin >> name;
+    editor.Insert_figure(editor.Doc_->factory.figure_names[name], std::cin);
     std::cout << "Figure is added\n";
 }
 
