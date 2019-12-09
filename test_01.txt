@@ -1,0 +1,28 @@
+man
+create document
+add
+1
+0 2 2 0 0 0
+add
+1
+0 2 2 0 2 2
+add
+2
+0 0 3 3
+add
+2
+0 2 2 2
+print
+remove
+3
+print
+create
+Y
+save.txt
+new_document
+load
+N
+save.txt
+print
+quit
+

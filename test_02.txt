@@ -1,0 +1,25 @@
+create
+undo_test
+add
+2
+0 0 1 1
+add
+2
+0 0 2 2
+print
+undo
+print
+add 1 0 0 3 0 0 3
+print
+remove
+3
+print
+undo
+print
+remove
+1
+undo
+print
+quit
+n
+
